@@ -91,14 +91,14 @@ public class Palestrante {
     @Override
     public String toString() {
         return "Palestrante{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", email='" + email + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", rg='" + rg + '\'' +
-                ", endereco='" + endereco + '\'' +
-                ", biografia='" + biografia + '\'' +
+                "id=" + id + "\n" +
+                ", nome='" + nome + '\'' + "\n" +
+                ", cpf='" + cpf + '\'' + "\n" +
+                ", email='" + email + '\'' + "\n" +
+                ", telefone='" + telefone + '\'' + "\n" +
+                ", rg='" + rg + '\'' + "\n" +
+                ", endereco='" + endereco + '\'' + "\n" +
+                ", biografia='" + biografia + '\'' + "\n" +
                 '}';
     }
 }

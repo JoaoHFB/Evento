@@ -1,6 +1,8 @@
 package br.edu.unisep.evento.model;
 
+import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.util.Calendar;
+import java.text.SimpleDateFormat;
 
 public class Evento {
     private int id;
@@ -92,15 +94,16 @@ public class Evento {
 
     @Override
     public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
         return "Evento{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", horario=" + horario +
-                ", tipo='" + tipo + '\'' +
-                ", local='" + local + '\'' +
-                ", sessao=" + sessao +
-                ", inscricao=" + inscricao +
+                "id=" + id + "\n" +
+                ", nome='" + nome + '\'' + "\n" +
+                ", descricao='" + descricao + '\'' + "\n" +
+                ", horario=" + sdf.format(horario.getTime()) + "\n" +
+                ", tipo='" + tipo + '\'' + "\n" +
+                ", local='" + local + '\'' + "\n" +
+                ", sessao=" + sessao + "\n" +
+                ", inscricao=" + inscricao + "\n" +
                 '}';
     }
 }

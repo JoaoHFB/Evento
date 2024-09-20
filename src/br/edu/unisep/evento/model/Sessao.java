@@ -1,5 +1,6 @@
 package br.edu.unisep.evento.model;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Sessao {
@@ -72,13 +73,14 @@ public class Sessao {
 
     @Override
     public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
         return "Sessao{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", horario=" + horario +
-                ", palestrante=" + palestrante +
-                ", participante=" + participante +
+                "id=" + id + "\n" +
+                ", nome='" + nome + '\'' + "\n" +
+                ", descricao='" + descricao + '\'' + "\n" +
+                ", horario=" + sdf.format(horario.getTime()) + "\n" +
+                ", palestrante=" + palestrante + "\n" +
+                ", participante=" + participante + "\n" +
                 '}';
     }
 }

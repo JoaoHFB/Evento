@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.util.Calendar;
 
 public class Funcao {
+
     public Evento adicionarevento(){
         int idevento =Integer.parseInt(JOptionPane.showInputDialog("Digite um ID"));
         String nome = JOptionPane.showInputDialog("Digite o nome");
@@ -81,6 +82,7 @@ public class Funcao {
         palestrante.setRg(rg);
         palestrante.setEndereco(endereco);
         palestrante.setBiografia(biografia);
+
         return palestrante;
     }
     public Inscricao adicionarIncricao(){
@@ -90,6 +92,7 @@ public class Funcao {
         inscricao.setId(idinscricao);
         inscricao.setParticipante(adicionarParticipante());
         inscricao.setSessao(adicionarSessao());
+
         return inscricao;
     }
 

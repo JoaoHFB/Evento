@@ -41,9 +41,9 @@ public class Inscricao {
     @Override
     public String toString() {
         return "Inscricao{" +
-                "id=" + id +
-                ", participante=" + participante +
-                ", sessao=" + sessao +
+                "id=" + id + "\n" +
+                ", participante=" + participante + "\n" +
+                ", sessao=" + sessao + "\n" +
                 '}';
     }
 }

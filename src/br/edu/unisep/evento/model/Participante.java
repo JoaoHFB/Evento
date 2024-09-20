@@ -71,12 +71,12 @@ public class Participante {
     @Override
     public String toString() {
         return "Participante{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", email='" + email + '\'' +
-                ", rg='" + rg + '\'' +
+                "id=" + id + "\n" +
+                ", nome='" + nome + '\'' + "\n" +
+                ", cpf='" + cpf + '\'' + "\n" +
+                ", telefone='" + telefone + '\'' + "\n" +
+                ", email='" + email + '\'' + "\n" +
+                ", rg='" + rg + '\'' + "\n" +
                 '}';
     }
 }
